@@ -84,7 +84,7 @@ app.use((err, req, res, next) => {
 // Start server only if this file is run directly
 if (import.meta.url === `file://${process.argv[1]}`) {
   app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`);
+    console.log(`🚀 Server running on port: ${PORT}`);
     console.log(`📊 Environment: ${process.env.NODE_ENV || "development"}`);
     console.log(`🌐 Health check: http://localhost:${PORT}/health`);
   });
